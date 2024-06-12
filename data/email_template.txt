@@ -1,4 +1,18 @@
-Bonjour [NOM],
-J'espère que vous allez bien,
+CANDIDATURE DATA ENGINEER EN ALTERNANCE CHEZ ORANGE
 
+Bonjour ,
+J'espère que vous allez bien.
 
+Je me permets de vous contacter pour vous proposer ma candidature pour une alternance en data engineering au sein d'ORANGE.
+
+Actuellement étudiant en 4ème année Big data & AI,
+je suis passionné par le domaine du big data et je souhaite développer mes compétences en rejoignant une équipe innovante telle que la vôtre.
+Mes expériences sur les technologies cloud et data (CGP, Python, Spark/Scala,Hive, Hadoop etc...) me permettront de contribuer efficacement à vos projets.
+Je vous joins mon CV, ma lettre de motivation ainsi qu'une lettre de recommandation pour appuyer ma candidature.
+Je suis disponible immédiatement pour tout entretien afin de vous exposer mes motivations.
+
+Dans l'attente de votre retour, je vous prie d'agréer l'expression de mes salutations distinguées.
+
+Cordialement
+Vianel KONG
+0758334658
