@@ -24,7 +24,9 @@ class LetterGenerator:
             document.save(f"./data/lettres de motivation/{entreprise_name}/ {rows["NOM"]} - lettre de motivation.docx")
             
             first_name, _= rows["NOM"].split(" ")
-            self.generate_email(fichier=f"./data/lettres de motivation/{entreprise_name}/email.txt",nom=first_name,skills=self.skills_entreprises[entreprise_name], entreprise=entreprise_name)
+            voyelles = ['a', 'e', 'i', 'o', 'u', 'y', 'A', 'E', 'I', 'O', 'U', 'Y']
+            article =  "d'" if entreprise_name[0] in voyelles else 'de '
+            self.generate_email(fichier=f"./data/lettres de motivation/{entreprise_name}/email.txt",nom=first_name,skills=self.skills_entreprises[entreprise_name], entreprise=entreprise_name,article=article)
         
         
         return ''
@@ -52,14 +54,14 @@ class LetterGenerator:
                
                 run.text = run.text.replace(old_text, new_text)
     
-    def generate_email(self,fichier, nom, entreprise, skills):
+    def generate_email(self,fichier, nom, entreprise, skills, article):
         nouveau_texte = f"""
-CANDIDATURE DATA ENGINEER EN ALTERNANCE CHEZ ORANGE
+CANDIDATURE DATA ENGINEER EN ALTERNANCE CHEZ {entreprise}
         
 Bonjour {nom},
 J'espère que vous allez bien.
 
-Je me permets de vous contacter pour vous proposer ma candidature pour une alternance en data engineering au sein de {entreprise}.
+Je me permets de vous contacter pour vous proposer ma candidature pour une alternance en data engineering au sein {article+entreprise}.
 
 Actuellement étudiant en 4ème année Big data & AI,
 je suis passionné par le domaine du big data et je souhaite développer mes compétences en rejoignant une équipe innovante telle que la vôtre.
